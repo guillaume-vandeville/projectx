@@ -1,8 +1,6 @@
-# Getting Started with Create React App
+## Basic information
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+You can access the website [here](https://guillaume-vandeville.github.io/projectx/)
 
 In the project directory, you can run:
 
