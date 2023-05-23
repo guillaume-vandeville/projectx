@@ -1,6 +1,6 @@
 {
   "name": "projectx",
-  "homepage": "https://guillaume-vandeville.github.io/react-gh-pages",
+  "homepage": "https://guillaume-vandeville.github.io/projectx/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy" : "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -b main -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
