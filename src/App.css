@@ -180,6 +180,55 @@ td {
   opacity: 1;
 }
 
+@media (max-width: 1024px) and (min-width: 768px) and (min-height: 768px) and (max-height:1024px){
+  .container {
+    width: 340px;
+  }
+  .inc-exp-container {
+    width: 100px;
+    font-size: 7px;
+    text-align: center;
+    height: 7vh;
+    padding: 3%;
+
+  }
+  table {
+    width: 230px;
+    height: 165px;
+  }
+  th {
+    font-size: 3.1px;
+  }
+  td {
+    font-size: 3.1px;
+  }
+  .list li{
+    font-size:3.1px;
+  }
+  .delete-btn {
+    transform: translate(-150%, -10%);
+  }
+  h1 {
+    font-size: 8px;
+  }
+  h2{
+    font-size: 10px;
+  }
+  h3 {
+    font-size: 8px;
+  }
+  h4 {
+    font-size: 7px;
+  }
+  input[type='text'],
+  input[type='number'] {
+    font-size: 8px;
+  }
+  label {
+    font-size: 8px;
+  } 
+}
+
 @media (max-width: 480px) {
   .container {
     width: 340px;
