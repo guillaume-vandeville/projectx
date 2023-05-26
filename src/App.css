@@ -50,6 +50,7 @@ h4 {
   font-size: small;
   margin: 0;
   text-transform: uppercase;
+  font-size: medium;
 }
 
 .inc-exp-container {
@@ -116,6 +117,22 @@ input[type='number'] {
   outline: 0;
 }
 
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
 .list li {
   font-size: x-small;
   color: #333;
@@ -135,7 +152,7 @@ input[type='number'] {
 
 table {
   width: 1000px;
-  height: 300px;
+  height: 250px;
   margin: 10px 0;
 }
 
@@ -159,22 +176,6 @@ td {
   border-right: 5px solid #c0392b;
 }
 
-.delete-btn {
-  cursor: pointer;
-  background-color: #e74c3c;
-  border: 0;
-  color: #fff;
-  font-size: 20px;
-  line-height: 20px;
-  padding: 10px 5px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-150%, 30%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
 .transaction-box:hover .delete-btn {
   opacity: 1;
 }
@@ -185,15 +186,15 @@ td {
   }
   .inc-exp-container {
     width: 100px;
-    font-size: x-small;
+    font-size: 7px;
     text-align: center;
-    height: 6vh;
+    height: 7vh;
     padding: 3%;
 
   }
   table {
     width: 230px;
-    height: 150px;
+    height: 165px;
   }
   th {
     font-size: 3.1px;
@@ -208,22 +209,22 @@ td {
     transform: translate(-150%, -10%);
   }
   h1 {
-    font-size: 10px;
+    font-size: 8px;
   }
   h2{
-    font-size: 15px;
+    font-size: 10px;
   }
   h3 {
-    font-size: 10px;
+    font-size: 8px;
   }
   h4 {
-    font-size: 10px;
+    font-size: 7px;
   }
   input[type='text'],
   input[type='number'] {
     font-size: 8px;
   }
   label {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
