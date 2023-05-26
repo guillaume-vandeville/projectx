@@ -8,6 +8,9 @@
   box-sizing: border-box;
 }
 
+tbody{
+  padding-bottom: 30%;
+}
 body {
   background-color: #f7f7f7;
   display: flex;
@@ -21,21 +24,30 @@ body {
 
 .container {
   margin: 30px auto;
-  width: 800px;
+  width: 1000px;
 }
 
 h1 {
+  font-size: small;
   letter-spacing: 1px;
   margin: 0;
 }
 
+h2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: x-large;
+
+}
+
 h3 {
-  border-bottom: 1px solid #bbb;
-  padding-bottom: 10px;
+  font-size: small;
   margin: 40px 0 10px;
 }
 
 h4 {
+  font-size: small;
   margin: 0;
   text-transform: uppercase;
 }
@@ -46,7 +58,9 @@ h4 {
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 10px auto;
+  width: 200px;
+  font-size: medium;
 }
 
 .inc-exp-container > div {
@@ -54,25 +68,22 @@ h4 {
   text-align: center;
 }
 
-.inc-exp-container > div:first-of-type {
-  border-right: 1px solid #dedede;
-}
-
 .money {
-  font-size: 20px;
+  font-size: medium;
   letter-spacing: 1px;
   margin: 5px 0;
 }
 
-.money.plus {
+.plus {
   color: #2ecc71;
 }
 
-.money.minus {
+.minus {
   color: #c0392b;
 }
 
 label {
+  font-size: small;
   display: inline-block;
   margin: 10px 0;
 }
@@ -82,7 +93,7 @@ input[type='number'] {
   border: 1px solid #dedede;
   border-radius: 2px;
   display: block;
-  font-size: 16px;
+  font-size: small;
   padding: 10px;
   width: 100%;
 }
@@ -105,21 +116,39 @@ input[type='number'] {
   outline: 0;
 }
 
-.list {
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 40px;
-}
-
 .list li {
-  background-color: #fff;
-  box-shadow: var(--box-shadow);
+  font-size: x-small;
   color: #333;
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding: 10px;
+  
+}
+
+.divTable{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+  width: 1000px;
+  height: 300px;
   margin: 10px 0;
+}
+
+th {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  font-size: x-small;
+}
+
+td {
+  text-align: center;
+  font-size: x-small;
+
 }
 
 .list li.plus {
@@ -137,21 +166,64 @@ input[type='number'] {
   color: #fff;
   font-size: 20px;
   line-height: 20px;
-  padding: 2px 5px;
+  padding: 10px 5px;
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate(-100%, -50%);
+  transform: translate(-150%, 30%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.list li:hover .delete-btn {
+.transaction-box:hover .delete-btn {
   opacity: 1;
 }
 
 @media (max-width: 480px) {
   .container {
-    width: 315px;
+    width: 340px;
+  }
+  .inc-exp-container {
+    width: 100px;
+    font-size: x-small;
+    text-align: center;
+    height: 6vh;
+    padding: 3%;
+
+  }
+  table {
+    width: 230px;
+    height: 150px;
+  }
+  th {
+    font-size: 3.1px;
+  }
+  td {
+    font-size: 3.1px;
+  }
+  .list li{
+    font-size:3.1px;
+  }
+  .delete-btn {
+    transform: translate(-150%, -10%);
+  }
+  h1 {
+    font-size: 10px;
+  }
+  h2{
+    font-size: 15px;
+  }
+  h3 {
+    font-size: 10px;
+  }
+  h4 {
+    font-size: 10px;
+  }
+  input[type='text'],
+  input[type='number'] {
+    font-size: 8px;
+  }
+  label {
+    font-size: 10px;
   }
 }
