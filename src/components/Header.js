@@ -3,7 +3,7 @@
  export const Header = () => {
    return (
     <h2>
-        Delivery receipt
+        Basic Delivery Receipt Application
     </h2>
    )
  }

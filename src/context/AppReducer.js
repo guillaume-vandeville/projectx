@@ -1,10 +1,5 @@
-export default (state,action) => {
+const appReduce = (state,action) => {
     switch(action.type){
-        case 'DELETE_ROW':
-            return{
-                ...state,
-                transactions: state.transactions.filter(transactions => transactions.id !== action.payload)
-            }
         case 'ADD_ROW':
             return{
                 ...state,
@@ -14,3 +9,5 @@ export default (state,action) => {
             return state;
     }
 }
+
+export default appReduce
